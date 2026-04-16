@@ -33,32 +33,41 @@ Built to avoid the manual grind of checking 180 career pages one at a time.
 
 ## Project layout
 
+Phase 1 (current — scaffolding only):
+
 ```
 jobpulse/
-├── api/                      # Vercel serverless functions (Node.js)
-│   ├── scan.js                 # the daily scan job (called by cron or manually)
-│   ├── apply.js                # mark-as-applied / update application
-│   └── health.js               # trivial ping for uptime monitoring
-├── public/                   # static frontend served by Vercel
-│   ├── index.html              # the whole app (Alpine.js + Tailwind)
-│   ├── companies.json          # generated from data/NorcalTech_validated.csv
-│   └── favicon.ico
-├── lib/                      # shared code between serverless functions
-│   ├── supabase.js             # Supabase client factory
-│   ├── ats-greenhouse.js       # Greenhouse API adapter
-│   ├── ats-lever.js            # Lever API adapter
-│   ├── ats-ashby.js            # Ashby API adapter
-│   └── ats-fallback.js         # Claude Haiku + web search fallback
-├── data/                     # source CSVs (gitignored; see data/README.md)
-├── scripts/                  # build-time scripts (Python)
+├── public/
+│   └── companies.json          # generated from data/NorcalTech_validated.csv
+├── data/                       # source CSVs (gitignored; see data/README.md)
+│   └── README.md
+├── scripts/
 │   └── build_companies.py      # CSV → public/companies.json
-├── supabase/                 # database schema + migrations
+├── supabase/
 │   └── schema.sql              # full schema, run once in the SQL editor
-├── .env.example              # template for environment variables
+├── .env.example                # template for environment variables
 ├── .gitignore
-├── package.json              # JS deps for serverless functions
-├── vercel.json               # deployment config + cron schedule
-└── README.md                 # you are here
+├── package.json                # JS deps for serverless functions (Phase 2)
+├── vercel.json                 # deployment config + cron schedule
+└── README.md                   # you are here
+```
+
+Phase 2+ will add:
+
+```
+├── api/                        # Vercel serverless functions (Node.js)
+│   ├── scan.js                   # the daily scan job
+│   ├── apply.js                  # mark-as-applied endpoint
+│   └── health.js                 # uptime ping
+├── public/
+│   ├── index.html                # the whole app (Alpine.js + Tailwind)
+│   └── favicon.ico
+├── lib/                        # shared code between serverless functions
+│   ├── supabase.js               # Supabase client factory
+│   ├── ats-greenhouse.js         # Greenhouse API adapter
+│   ├── ats-lever.js              # Lever API adapter
+│   ├── ats-ashby.js              # Ashby API adapter
+│   └── ats-fallback.js           # Claude Haiku + web search fallback
 ```
 
 ## Setup
