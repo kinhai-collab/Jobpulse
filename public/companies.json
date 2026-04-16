@@ -1,0 +1,2130 @@
+{
+  "updated_at": "2026-04-16T05:57:44.765731+00:00",
+  "total_companies": 183,
+  "tier1_count": 34,
+  "tier2_count": 149,
+  "tier1_known_jobs": 3388,
+  "companies": [
+    {
+      "id": "databricks",
+      "name": "Databricks",
+      "careers_url": "https://www.databricks.com/company/careers/open-positions",
+      "hq": "San Francisco",
+      "size": "5000+",
+      "stage": "Late Stage",
+      "focus": "Data + AI Platform",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "databricks",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/databricks/jobs"
+      },
+      "known_job_count": 858,
+      "aliases": [
+        "MosaicML (Databricks)"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "careers_url": "https://www.anthropic.com/careers",
+      "hq": "San Francisco",
+      "size": "2500+",
+      "stage": "Late Stage",
+      "focus": "Foundation Models",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "anthropic",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs"
+      },
+      "known_job_count": 434
+    },
+    {
+      "id": "verkada-ai",
+      "name": "Verkada AI",
+      "careers_url": "https://www.verkada.com/careers",
+      "hq": "San Mateo",
+      "size": "1000+",
+      "stage": "Series D",
+      "focus": "Security AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "verkada",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/verkada/jobs"
+      },
+      "known_job_count": 298
+    },
+    {
+      "id": "klaviyo-ai",
+      "name": "Klaviyo AI",
+      "careers_url": "https://www.klaviyo.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Marketing AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "klaviyo",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/klaviyo/jobs"
+      },
+      "known_job_count": 245
+    },
+    {
+      "id": "scale-ai",
+      "name": "Scale AI",
+      "careers_url": "https://scale.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series F",
+      "focus": "AI Data",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "scaleai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/scaleai/jobs"
+      },
+      "known_job_count": 172
+    },
+    {
+      "id": "mistral-ai",
+      "name": "Mistral AI (US)",
+      "careers_url": "https://mistral.ai/careers",
+      "hq": "Menlo Park",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Foundation Models",
+      "tier": 1,
+      "ats": {
+        "platform": "Lever",
+        "slug": "mistral",
+        "api_url": "https://api.lever.co/v0/postings/mistral?mode=json"
+      },
+      "known_job_count": 150
+    },
+    {
+      "id": "sierra-ai",
+      "name": "Sierra AI",
+      "careers_url": "https://sierra.ai/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "AI Agents",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "sierra",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/sierra"
+      },
+      "known_job_count": 140
+    },
+    {
+      "id": "cresta-ai",
+      "name": "Cresta AI",
+      "careers_url": "https://cresta.com/careers/",
+      "hq": "San Francisco",
+      "size": "251-500",
+      "stage": "Series C",
+      "focus": "Contact Center AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "cresta",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/cresta/jobs"
+      },
+      "known_job_count": 121
+    },
+    {
+      "id": "figure-ai",
+      "name": "Figure AI",
+      "careers_url": "https://www.figure.ai/careers",
+      "hq": "Sunnyvale",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Humanoid Robotics",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "figureai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/figureai/jobs"
+      },
+      "known_job_count": 101
+    },
+    {
+      "id": "decagon-ai",
+      "name": "Decagon AI",
+      "careers_url": "https://decagon.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "AI Agents",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "decagon",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/decagon"
+      },
+      "known_job_count": 97
+    },
+    {
+      "id": "abnormal-security",
+      "name": "Abnormal Security",
+      "careers_url": "https://abnormal.ai/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series D",
+      "focus": "AI Security",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "abnormalsecurity",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/abnormalsecurity/jobs"
+      },
+      "known_job_count": 94
+    },
+    {
+      "id": "vercel-ai",
+      "name": "Vercel AI",
+      "careers_url": "https://vercel.com/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "AI Dev Platform",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "vercel",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/vercel/jobs"
+      },
+      "known_job_count": 80
+    },
+    {
+      "id": "dataiku",
+      "name": "Dataiku",
+      "careers_url": "https://www.dataiku.com/careers/",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series E",
+      "focus": "Enterprise AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "dataiku",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/dataiku/jobs"
+      },
+      "known_job_count": 56
+    },
+    {
+      "id": "moveworks",
+      "name": "Moveworks",
+      "careers_url": "https://www.moveworks.com/us/en/company/careers",
+      "hq": "Mountain View",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Enterprise AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "moveworks",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/moveworks/jobs"
+      },
+      "known_job_count": 54
+    },
+    {
+      "id": "together-ai",
+      "name": "Together AI",
+      "careers_url": "https://www.together.ai/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "AI Infra",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "togetherai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/togetherai/jobs"
+      },
+      "known_job_count": 51
+    },
+    {
+      "id": "rogo-ai",
+      "name": "Rogo AI",
+      "careers_url": "https://rogo.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Finance AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "rogo",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/rogo"
+      },
+      "known_job_count": 45
+    },
+    {
+      "id": "snorkel-ai",
+      "name": "Snorkel AI",
+      "careers_url": "https://snorkel.ai/careers/",
+      "hq": "Redwood City",
+      "size": "251-500",
+      "stage": "Series D",
+      "focus": "Data-centric AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "snorkelai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/snorkelai/jobs"
+      },
+      "known_job_count": 44
+    },
+    {
+      "id": "amplitude",
+      "name": "Amplitude",
+      "careers_url": "https://amplitude.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Product Analytics + AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "amplitude",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/amplitude/jobs"
+      },
+      "known_job_count": 41
+    },
+    {
+      "id": "c3-ai",
+      "name": "C3 AI",
+      "careers_url": "https://c3.ai/careers/",
+      "hq": "Redwood City",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Enterprise AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "c3iot",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/c3iot/jobs"
+      },
+      "known_job_count": 35
+    },
+    {
+      "id": "arize-ai",
+      "name": "Arize AI",
+      "careers_url": "https://arize.com/careers/",
+      "hq": "Berkeley",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "AI Observability",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "arizeai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/arizeai/jobs"
+      },
+      "known_job_count": 34
+    },
+    {
+      "id": "bigid",
+      "name": "BigID",
+      "careers_url": "https://bigid.com/careers/",
+      "hq": "Redwood City",
+      "size": "501-1000",
+      "stage": "Series D",
+      "focus": "AI Security",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "bigid",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/bigid/jobs"
+      },
+      "known_job_count": 32
+    },
+    {
+      "id": "vectra-ai",
+      "name": "Vectra AI",
+      "careers_url": "https://www.vectra.ai/careers",
+      "hq": "San Jose",
+      "size": "1000+",
+      "stage": "Series F",
+      "focus": "AI Security",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "vectranetworks",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/vectranetworks/jobs"
+      },
+      "known_job_count": 30
+    },
+    {
+      "id": "cartesia",
+      "name": "Cartesia",
+      "careers_url": "https://jobs.ashbyhq.com/cartesia",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "Voice AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "cartesia",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/cartesia"
+      },
+      "known_job_count": 29
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "careers_url": "https://www.descript.com/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series C",
+      "focus": "AI Media Editing",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "descript",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/descript/jobs"
+      },
+      "known_job_count": 23
+    },
+    {
+      "id": "roboflow",
+      "name": "Roboflow",
+      "careers_url": "https://roboflow.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Vision AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "roboflow",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/roboflow"
+      },
+      "known_job_count": 19
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "careers_url": "https://www.alchemy.com/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series C",
+      "focus": "Developer Platform / AI infra",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "alchemy",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/alchemy/jobs"
+      },
+      "known_job_count": 16
+    },
+    {
+      "id": "stability-ai",
+      "name": "Stability AI (SF)",
+      "careers_url": "https://stability.ai/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Generative AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "stabilityai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/stabilityai/jobs"
+      },
+      "known_job_count": 15
+    },
+    {
+      "id": "common-room-ai",
+      "name": "Common Room AI",
+      "careers_url": "https://www.commonroom.io/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "AI GTM tools",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "commonroom",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/commonroom"
+      },
+      "known_job_count": 12
+    },
+    {
+      "id": "instabase",
+      "name": "Instabase",
+      "careers_url": "https://www.instabase.com/careers/",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Enterprise AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "instabase",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/instabase/jobs"
+      },
+      "known_job_count": 12
+    },
+    {
+      "id": "observe-ai",
+      "name": "Observe.AI",
+      "careers_url": "https://www.observe.ai/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series C",
+      "focus": "Contact center AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "observeai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/observeai/jobs"
+      },
+      "known_job_count": 12
+    },
+    {
+      "id": "unstructured-io",
+      "name": "Unstructured.io",
+      "careers_url": "https://unstructured.io/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "Data for LLMs",
+      "tier": 1,
+      "ats": {
+        "platform": "Ashby",
+        "slug": "unstructured",
+        "api_url": "https://api.ashbyhq.com/posting-api/job-board/unstructured"
+      },
+      "known_job_count": 12
+    },
+    {
+      "id": "domino-data-lab",
+      "name": "Domino Data Lab",
+      "careers_url": "https://www.dominodatalab.com/company/careers",
+      "hq": "San Francisco",
+      "size": "501-1000",
+      "stage": "Series F",
+      "focus": "MLOps",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "dominodatalab",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/dominodatalab/jobs"
+      },
+      "known_job_count": 11
+    },
+    {
+      "id": "labelbox",
+      "name": "Labelbox",
+      "careers_url": "https://labelbox.com/careers/",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "AI Data",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "labelbox",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/labelbox/jobs"
+      },
+      "known_job_count": 9
+    },
+    {
+      "id": "assemblyai",
+      "name": "AssemblyAI",
+      "careers_url": "https://www.assemblyai.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Speech AI",
+      "tier": 1,
+      "ats": {
+        "platform": "Greenhouse",
+        "slug": "assemblyai",
+        "api_url": "https://boards-api.greenhouse.io/v1/boards/assemblyai/jobs"
+      },
+      "known_job_count": 6
+    },
+    {
+      "id": "activeloop",
+      "name": "Activeloop",
+      "careers_url": "https://www.activeloop.ai/careers",
+      "hq": "Mountain View",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "AI Data Infrastructure",
+      "tier": 2
+    },
+    {
+      "id": "adept",
+      "name": "Adept",
+      "careers_url": "https://www.adept.ai/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Agentic AI",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe",
+      "careers_url": "https://careers.adobe.com/us/en",
+      "hq": "San Jose",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "Creative AI / GenAI",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "aible",
+      "name": "Aible",
+      "careers_url": "https://www.aible.com/careers/",
+      "hq": "Pleasanton",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Enterprise AI",
+      "tier": 2
+    },
+    {
+      "id": "aidash",
+      "name": "AiDash",
+      "careers_url": "https://www.aidash.com/careers/",
+      "hq": "Palo Alto",
+      "size": "251-500",
+      "stage": "Series C",
+      "focus": "Climate AI",
+      "tier": 2
+    },
+    {
+      "id": "aisera",
+      "name": "Aisera",
+      "careers_url": "https://aisera.com/careers/",
+      "hq": "Palo Alto",
+      "size": "251-500",
+      "stage": "Acquired",
+      "focus": "Enterprise AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "aixplain",
+      "name": "Aixplain",
+      "careers_url": "https://www.aixplain.com/careers",
+      "hq": "Los Gatos",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "AI Marketplace",
+      "tier": 2
+    },
+    {
+      "id": "akasa",
+      "name": "AKASA",
+      "careers_url": "https://akasa.com/careers/",
+      "hq": "South San Francisco",
+      "size": "251-500",
+      "stage": "Series C",
+      "focus": "Healthcare AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "alation",
+      "name": "Alation",
+      "careers_url": "https://www.alation.com/careers/",
+      "hq": "Redwood City",
+      "size": "501-1000",
+      "stage": "Series D",
+      "focus": "Data + AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "allegro-ai",
+      "name": "Allegro AI",
+      "careers_url": "https://clear.ml/careers",
+      "hq": "San Jose",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "MLOps",
+      "tier": 2
+    },
+    {
+      "id": "allganize",
+      "name": "Allganize",
+      "careers_url": "https://www.allganize.ai/careers",
+      "hq": "Sunnyvale",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Enterprise AI",
+      "tier": 2
+    },
+    {
+      "id": "almanac-ai",
+      "name": "Almanac AI",
+      "careers_url": "https://www.almanac.io/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "AI Collaboration",
+      "tier": 2
+    },
+    {
+      "id": "alpaca-ml",
+      "name": "Alpaca ML",
+      "careers_url": "https://alpaca.markets/careers",
+      "hq": "San Mateo",
+      "size": "100-250",
+      "stage": "Series C",
+      "focus": "AI Finance",
+      "tier": 2
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon (AWS AI)",
+      "careers_url": "https://www.amazon.jobs/en/",
+      "hq": "Sunnyvale",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "AI Cloud / Infra",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "ambi-robotics",
+      "name": "Ambi Robotics",
+      "careers_url": "https://www.ambirobotics.com/careers",
+      "hq": "Berkeley",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "Robotics",
+      "tier": 2
+    },
+    {
+      "id": "ambient-ai",
+      "name": "Ambient.ai",
+      "careers_url": "https://www.ambient.ai/careers",
+      "hq": "Redwood City",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "AI Security",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "anomalo",
+      "name": "Anomalo",
+      "careers_url": "https://www.anomalo.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "AI Data Quality",
+      "tier": 2
+    },
+    {
+      "id": "anyscale",
+      "name": "Anyscale",
+      "careers_url": "https://www.anyscale.com/careers",
+      "hq": "San Francisco",
+      "size": "251-500",
+      "stage": "Series C",
+      "focus": "AI Infra / Ray",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "aporia",
+      "name": "Aporia",
+      "careers_url": "https://www.aporia.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "AI Observability",
+      "tier": 2
+    },
+    {
+      "id": "appen",
+      "name": "Appen (AI ops)",
+      "careers_url": "https://appen.com/careers",
+      "hq": "Sunnyvale",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "AI Data",
+      "tier": 2
+    },
+    {
+      "id": "apple",
+      "name": "Apple (AI/ML)",
+      "careers_url": "https://jobs.apple.com/en-us/search",
+      "hq": "Cupertino",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "Consumer AI",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "aquant",
+      "name": "Aquant",
+      "careers_url": "https://www.aquant.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Service AI",
+      "tier": 2
+    },
+    {
+      "id": "arrcus-ai",
+      "name": "Arrcus AI",
+      "careers_url": "https://arrcus.com/careers/",
+      "hq": "San Jose",
+      "size": "251-500",
+      "stage": "Series D",
+      "focus": "AI Networking",
+      "tier": 2
+    },
+    {
+      "id": "atlan",
+      "name": "Atlan",
+      "careers_url": "https://atlan.com/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series C",
+      "focus": "Data + AI Catalog",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "atlassian-ai",
+      "name": "Atlassian AI",
+      "careers_url": "https://www.atlassian.com/company/careers",
+      "hq": "San Francisco",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "AI Productivity",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "atropos-health",
+      "name": "Atropos Health",
+      "careers_url": "https://www.atroposhealth.com/careers/",
+      "hq": "Palo Alto",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "Healthcare AI",
+      "tier": 2
+    },
+    {
+      "id": "augment-code",
+      "name": "Augment Code",
+      "careers_url": "https://www.augmentcode.com/careers",
+      "hq": "Palo Alto",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "AI Coding",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "ava-labs",
+      "name": "Ava Labs (AI infra)",
+      "careers_url": "https://www.avalabs.org/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "AI + Blockchain",
+      "tier": 2
+    },
+    {
+      "id": "avaamo",
+      "name": "Avaamo",
+      "careers_url": "https://avaamo.ai/careers/",
+      "hq": "Los Altos",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Enterprise AI",
+      "tier": 2
+    },
+    {
+      "id": "ayasdi-ai",
+      "name": "Ayasdi AI",
+      "careers_url": "https://www.symphonyai.com/careers/",
+      "hq": "Palo Alto",
+      "size": "1000+",
+      "stage": "Acquired",
+      "focus": "Enterprise AI",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "bardeen",
+      "name": "Bardeen",
+      "careers_url": "https://jobs.ashbyhq.com/bardeen",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "AI Agents",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "baseten",
+      "name": "Baseten",
+      "careers_url": "https://www.baseten.co/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series E",
+      "focus": "Inference Infra",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "bend-ai",
+      "name": "Bend AI",
+      "careers_url": "https://bend.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "AI Agents",
+      "tier": 2
+    },
+    {
+      "id": "bigpanda-ai",
+      "name": "BigPanda AI",
+      "careers_url": "https://www.bigpanda.io/careers/",
+      "hq": "Redwood City",
+      "size": "501-1000",
+      "stage": "Series D",
+      "focus": "AIOps",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "blue-river-tech",
+      "name": "Blue River Tech",
+      "careers_url": "https://www.bluerivertechnology.com/careers",
+      "hq": "Sunnyvale",
+      "size": "251-500",
+      "stage": "Acquired",
+      "focus": "Agri AI / Robotics",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "bonsai-ai",
+      "name": "Bonsai AI (Microsoft)",
+      "careers_url": "https://careers.microsoft.com",
+      "hq": "San Francisco",
+      "size": "10000+",
+      "stage": "Acquired",
+      "focus": "AI Control Systems",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "braintrust",
+      "name": "Braintrust",
+      "careers_url": "https://www.braintrust.dev/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "AI Dev Tools",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "causalens",
+      "name": "CausaLens",
+      "careers_url": "https://causalens.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Causal AI",
+      "tier": 2
+    },
+    {
+      "id": "cerebras-systems",
+      "name": "Cerebras Systems",
+      "careers_url": "https://www.cerebras.net/careers/",
+      "hq": "Sunnyvale",
+      "size": "501-1000",
+      "stage": "Series F",
+      "focus": "AI Chips",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "character-ai",
+      "name": "Character.AI",
+      "careers_url": "https://character.ai/careers",
+      "hq": "Menlo Park",
+      "size": "100-250",
+      "stage": "Series A/B",
+      "focus": "Consumer AI",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "clarifai",
+      "name": "Clarifai",
+      "careers_url": "https://www.clarifai.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Vision AI",
+      "tier": 2
+    },
+    {
+      "id": "clockwise-ai",
+      "name": "Clockwise AI",
+      "careers_url": "https://www.getclockwise.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Productivity AI",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "cognitivescale",
+      "name": "Cognitivescale",
+      "careers_url": "https://www.cognitivescale.com/careers",
+      "hq": "Austin/SF",
+      "size": "251-500",
+      "stage": "Series C",
+      "focus": "Enterprise AI",
+      "tier": 2
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "careers_url": "https://cohere.com/careers",
+      "hq": "Mountain View",
+      "size": "500-1000",
+      "stage": "Series C",
+      "focus": "Foundation Models",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "cohesity",
+      "name": "Cohesity (AI)",
+      "careers_url": "https://www.cohesity.com/careers",
+      "hq": "San Jose",
+      "size": "1000+",
+      "stage": "Private",
+      "focus": "AI + Data Security",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "confluent",
+      "name": "Confluent (AI)",
+      "careers_url": "https://www.confluent.io/careers/",
+      "hq": "Mountain View",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Data + AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "contextual-ai",
+      "name": "Contextual AI",
+      "careers_url": "https://www.contextual.ai/careers",
+      "hq": "Mountain View",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "RAG / LLM infra",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "cruise",
+      "name": "Cruise",
+      "careers_url": "https://getcruise.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Acquired",
+      "focus": "Autonomous Vehicles",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "datarobot",
+      "name": "DataRobot",
+      "careers_url": "https://www.datarobot.com/careers/",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series G",
+      "focus": "AutoML",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "deep-sentinel-ai",
+      "name": "Deep Sentinel AI",
+      "careers_url": "https://www.deepsentinel.com/careers",
+      "hq": "Pleasanton",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "AI Security",
+      "tier": 2
+    },
+    {
+      "id": "deepgram",
+      "name": "Deepgram",
+      "careers_url": "https://deepgram.com/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Speech AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "diffbot",
+      "name": "Diffbot",
+      "careers_url": "https://www.diffbot.com/careers/",
+      "hq": "Mountain View",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Knowledge Graph AI",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "doxel-ai",
+      "name": "Doxel AI",
+      "careers_url": "https://www.doxel.ai/careers",
+      "hq": "Redwood City",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Construction AI",
+      "tier": 2
+    },
+    {
+      "id": "dremio",
+      "name": "Dremio (AI)",
+      "careers_url": "https://www.dremio.com/careers/",
+      "hq": "Santa Clara",
+      "size": "500-1000",
+      "stage": "Series E",
+      "focus": "Data + AI",
+      "tier": 2
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox (AI)",
+      "careers_url": "https://jobs.dropbox.com/all-jobs",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "AI productivity",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "eightfold-ai",
+      "name": "Eightfold AI",
+      "careers_url": "https://eightfold.ai/careers/",
+      "hq": "Mountain View",
+      "size": "1000+",
+      "stage": "Series E",
+      "focus": "HR AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "element-ai",
+      "name": "Element AI (ServiceNow)",
+      "careers_url": "https://careers.servicenow.com",
+      "hq": "Santa Clara",
+      "size": "10000+",
+      "stage": "Acquired",
+      "focus": "Enterprise AI",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "elicit-ai",
+      "name": "Elicit AI",
+      "careers_url": "https://elicit.org/careers",
+      "hq": "Oakland",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Research AI",
+      "tier": 2
+    },
+    {
+      "id": "encord",
+      "name": "Encord",
+      "careers_url": "https://encord.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "AI Data",
+      "tier": 2
+    },
+    {
+      "id": "endor-labs",
+      "name": "Endor Labs",
+      "careers_url": "https://www.endorlabs.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "AI Security",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "enlitic-ai",
+      "name": "Enlitic AI",
+      "careers_url": "https://www.enlitic.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Healthcare AI",
+      "tier": 2
+    },
+    {
+      "id": "evenup",
+      "name": "EvenUp",
+      "careers_url": "https://www.evenuplaw.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Legal AI",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "expensify-ai",
+      "name": "Expensify AI",
+      "careers_url": "https://use.expensify.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Finance AI",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "facet-ai",
+      "name": "Facet AI",
+      "careers_url": "https://facet.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "Finance AI",
+      "tier": 2
+    },
+    {
+      "id": "fermyon-ai",
+      "name": "Fermyon AI",
+      "careers_url": "https://fermyon.com/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Series A",
+      "focus": "AI infra / WASM",
+      "tier": 2
+    },
+    {
+      "id": "fiddler-ai",
+      "name": "Fiddler AI",
+      "careers_url": "https://www.fiddler.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "AI Observability",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "fixie-ai",
+      "name": "Fixie AI",
+      "careers_url": "https://fixie.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "AI Agents",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "forethought",
+      "name": "Forethought",
+      "careers_url": "https://forethought.ai/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "Support AI",
+      "tier": 2
+    },
+    {
+      "id": "galileo-ai",
+      "name": "Galileo AI",
+      "careers_url": "https://www.galileo.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "AI Design",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "glean",
+      "name": "Glean",
+      "careers_url": "https://www.glean.com/careers",
+      "hq": "Palo Alto",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Enterprise Search AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "google",
+      "name": "Google (DeepMind/AI)",
+      "careers_url": "https://careers.google.com/jobs/results/",
+      "hq": "Mountain View",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "AI / LLMs",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "gorgias-ai",
+      "name": "Gorgias AI",
+      "careers_url": "https://www.gorgias.com/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series C",
+      "focus": "Support AI",
+      "tier": 2
+    },
+    {
+      "id": "grammarly-ai",
+      "name": "Grammarly AI",
+      "careers_url": "https://www.grammarly.com/jobs",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Late Stage",
+      "focus": "Writing AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "careers_url": "https://groq.com/careers/",
+      "hq": "Mountain View",
+      "size": "100-250",
+      "stage": "Series C",
+      "focus": "AI Chips",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "h2o-ai",
+      "name": "H2O.ai",
+      "careers_url": "https://h2o.ai/company/careers/",
+      "hq": "Mountain View",
+      "size": "501-1000",
+      "stage": "Series E",
+      "focus": "Enterprise AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "harmonic-ai",
+      "name": "Harmonic AI",
+      "careers_url": "https://harmonic.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "AI Analytics",
+      "tier": 2
+    },
+    {
+      "id": "harvey-ai",
+      "name": "Harvey AI",
+      "careers_url": "https://harvey.ai/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Legal AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "hex-ai",
+      "name": "Hex AI",
+      "careers_url": "https://hex.tech/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Data + AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face (SF)",
+      "careers_url": "https://huggingface.co/join-us",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Open AI platform",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "humanloop",
+      "name": "Humanloop",
+      "careers_url": "https://humanloop.com/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "LLM tooling",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "inflection-ai",
+      "name": "Inflection AI",
+      "careers_url": "https://inflection.ai/careers",
+      "hq": "Palo Alto",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Foundation Models",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "intel-ai",
+      "name": "Intel AI",
+      "careers_url": "https://jobs.intel.com/",
+      "hq": "Santa Clara",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "AI Hardware",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "inworld-ai",
+      "name": "Inworld AI",
+      "careers_url": "https://inworld.ai/careers",
+      "hq": "Mountain View",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "AI Characters",
+      "tier": 2
+    },
+    {
+      "id": "ironclad-ai",
+      "name": "Ironclad AI",
+      "careers_url": "https://ironcladapp.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series E",
+      "focus": "Legal AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "jasper-ai",
+      "name": "Jasper AI",
+      "careers_url": "https://www.jasper.ai/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series A",
+      "focus": "Marketing AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "kore-ai",
+      "name": "Kore.ai",
+      "careers_url": "https://kore.ai/careers/",
+      "hq": "Redwood City",
+      "size": "1000+",
+      "stage": "Series D",
+      "focus": "Conversational AI",
+      "tier": 2
+    },
+    {
+      "id": "lambda",
+      "name": "Lambda",
+      "careers_url": "https://lambda.ai/careers",
+      "hq": "San Jose",
+      "size": "500-1000",
+      "stage": "Series E",
+      "focus": "AI Cloud",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "landing-ai",
+      "name": "Landing AI",
+      "careers_url": "https://landing.ai/careers",
+      "hq": "San Mateo",
+      "size": "101-250",
+      "stage": "Series A",
+      "focus": "Vision AI",
+      "tier": 2
+    },
+    {
+      "id": "lexion-ai",
+      "name": "Lexion AI",
+      "careers_url": "https://lexion.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Legal AI",
+      "tier": 2
+    },
+    {
+      "id": "lightmatter",
+      "name": "Lightmatter",
+      "careers_url": "https://lightmatter.co/careers/",
+      "hq": "Mountain View",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "AI Chips",
+      "tier": 2
+    },
+    {
+      "id": "lilt",
+      "name": "Lilt",
+      "careers_url": "https://lilt.com/careers/",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "Translation AI",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "liveramp-ai",
+      "name": "LiveRamp AI",
+      "careers_url": "https://liveramp.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Data + AI",
+      "tier": 2
+    },
+    {
+      "id": "llamaindex",
+      "name": "LlamaIndex",
+      "careers_url": "https://www.llamaindex.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "AI Dev Tools",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "luma-ai",
+      "name": "Luma AI",
+      "careers_url": "https://lumalabs.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "3D AI",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "matroid",
+      "name": "Matroid",
+      "careers_url": "https://www.matroid.com/careers",
+      "hq": "Palo Alto",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Vision AI",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "maven-agi",
+      "name": "Maven AGI",
+      "careers_url": "https://mavenagi.com/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "Enterprise AI",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "careers_url": "https://www.metacareers.com/jobs",
+      "hq": "Menlo Park",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "AI / LLMs",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "narrative-bi",
+      "name": "Narrative BI",
+      "careers_url": "https://narrative.bi/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Analytics AI",
+      "tier": 2
+    },
+    {
+      "id": "netspring-ai",
+      "name": "NetSpring AI",
+      "careers_url": "https://www.netspring.io/careers",
+      "hq": "San Mateo",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "AI Analytics",
+      "tier": 2
+    },
+    {
+      "id": "nimble-ai",
+      "name": "Nimble AI",
+      "careers_url": "https://nimble.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Robotics",
+      "tier": 2
+    },
+    {
+      "id": "nuro",
+      "name": "Nuro",
+      "careers_url": "https://www.nuro.ai/careers",
+      "hq": "Mountain View",
+      "size": "1000+",
+      "stage": "Series D",
+      "focus": "Autonomous Vehicles",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "nvidia",
+      "name": "Nvidia",
+      "careers_url": "https://www.nvidia.com/en-us/about-nvidia/careers/",
+      "hq": "Santa Clara",
+      "size": "10000+",
+      "stage": "Public",
+      "focus": "AI Chips",
+      "tier": 2,
+      "claimed_platform": "Workday"
+    },
+    {
+      "id": "observe-inc",
+      "name": "Observe Inc",
+      "careers_url": "https://www.observeinc.com/careers",
+      "hq": "San Mateo",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Observability AI",
+      "tier": 2
+    },
+    {
+      "id": "octoai",
+      "name": "OctoAI",
+      "careers_url": "https://octo.ai/careers",
+      "hq": "Seattle/SF",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "AI Infra",
+      "tier": 2
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "careers_url": "https://openai.com/careers",
+      "hq": "San Francisco",
+      "size": "5000+",
+      "stage": "Late Stage",
+      "focus": "Foundation Models",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "orbital-insight",
+      "name": "Orbital Insight",
+      "careers_url": "https://orbitalinsight.com/careers",
+      "hq": "Palo Alto",
+      "size": "251-500",
+      "stage": "Series D",
+      "focus": "Geospatial AI",
+      "tier": 2
+    },
+    {
+      "id": "otter-ai",
+      "name": "Otter.ai",
+      "careers_url": "https://otter.ai/careers",
+      "hq": "Mountain View",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Speech AI",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "people-ai",
+      "name": "People.ai",
+      "careers_url": "https://people.ai/careers/",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Revenue AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "careers_url": "https://www.perplexity.ai/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series C",
+      "focus": "AI Search",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "pilot-ai",
+      "name": "Pilot AI",
+      "careers_url": "https://pilot.com/careers",
+      "hq": "San Francisco",
+      "size": "251-500",
+      "stage": "Series C",
+      "focus": "Finance AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "careers_url": "https://www.pinecone.io/careers/",
+      "hq": "San Mateo",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "Vector DB",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "pony-ai",
+      "name": "Pony.ai",
+      "careers_url": "https://pony.ai/careers",
+      "hq": "Fremont",
+      "size": "1000+",
+      "stage": "Series D",
+      "focus": "Autonomous Vehicles",
+      "tier": 2
+    },
+    {
+      "id": "primer-ai",
+      "name": "Primer AI",
+      "careers_url": "https://primer.ai/careers",
+      "hq": "San Francisco",
+      "size": "251-500",
+      "stage": "Series D",
+      "focus": "NLP AI",
+      "tier": 2
+    },
+    {
+      "id": "recursion",
+      "name": "Recursion (AI)",
+      "careers_url": "https://www.recursion.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Biotech AI",
+      "tier": 2
+    },
+    {
+      "id": "relationalai",
+      "name": "RelationalAI",
+      "careers_url": "https://relational.ai/careers",
+      "hq": "Mountain View",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Knowledge Graph AI",
+      "tier": 2
+    },
+    {
+      "id": "replit-ai",
+      "name": "Replit AI",
+      "careers_url": "https://replit.com/careers",
+      "hq": "Foster City",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "AI Coding",
+      "tier": 2
+    },
+    {
+      "id": "revery-ai",
+      "name": "Revery AI",
+      "careers_url": "https://revery.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "Retail AI",
+      "tier": 2
+    },
+    {
+      "id": "runway-ml",
+      "name": "Runway ML",
+      "careers_url": "https://runwayml.com/careers",
+      "hq": "San Francisco",
+      "size": "100-250",
+      "stage": "Series C",
+      "focus": "Generative Video",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "sambanova-systems",
+      "name": "SambaNova Systems",
+      "careers_url": "https://sambanova.ai/careers/",
+      "hq": "Palo Alto",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "AI Hardware",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "sift-ai",
+      "name": "Sift AI",
+      "careers_url": "https://sift.com/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Series E",
+      "focus": "Fraud AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "skydio",
+      "name": "Skydio",
+      "careers_url": "https://www.skydio.com/careers",
+      "hq": "San Mateo",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Drone AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "snapsheet-ai",
+      "name": "Snapsheet AI",
+      "careers_url": "https://snapsheetclaims.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Insurance AI",
+      "tier": 2
+    },
+    {
+      "id": "soundhound-ai",
+      "name": "SoundHound AI",
+      "careers_url": "https://www.soundhound.com/careers/",
+      "hq": "Santa Clara",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Voice AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "spellbook-ai",
+      "name": "Spellbook AI",
+      "careers_url": "https://spellbook.legal/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Legal AI",
+      "tier": 2
+    },
+    {
+      "id": "standard-ai",
+      "name": "Standard AI",
+      "careers_url": "https://standard.ai/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "Retail AI",
+      "tier": 2
+    },
+    {
+      "id": "suki-ai",
+      "name": "Suki AI",
+      "careers_url": "https://www.suki.ai/careers",
+      "hq": "Redwood City",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "Healthcare AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "superhuman-ai",
+      "name": "Superhuman AI",
+      "careers_url": "https://superhuman.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series C",
+      "focus": "Email AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia (SF)",
+      "careers_url": "https://www.synthesia.io/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series C",
+      "focus": "Video AI",
+      "tier": 2
+    },
+    {
+      "id": "syntiant",
+      "name": "Syntiant",
+      "careers_url": "https://www.syntiant.com/careers",
+      "hq": "Irvine/SF",
+      "size": "251-500",
+      "stage": "Series D",
+      "focus": "Edge AI Chips",
+      "tier": 2
+    },
+    {
+      "id": "tecton-ai",
+      "name": "Tecton AI",
+      "careers_url": "https://www.tecton.ai/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Feature Store",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "tempus-ai",
+      "name": "Tempus AI (Bay Area)",
+      "careers_url": "https://www.tempus.com/careers/",
+      "hq": "Redwood City",
+      "size": "1000+",
+      "stage": "Public",
+      "focus": "Healthcare AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "text-blaze-ai",
+      "name": "Text Blaze AI",
+      "careers_url": "https://blaze.today/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Productivity AI",
+      "tier": 2
+    },
+    {
+      "id": "thoughtspot-ai",
+      "name": "ThoughtSpot AI",
+      "careers_url": "https://www.thoughtspot.com/careers",
+      "hq": "Mountain View",
+      "size": "1000+",
+      "stage": "Series F",
+      "focus": "Analytics AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "tractable-ai",
+      "name": "Tractable AI",
+      "careers_url": "https://tractable.ai/careers",
+      "hq": "San Francisco",
+      "size": "251-500",
+      "stage": "Series D",
+      "focus": "Vision AI",
+      "tier": 2
+    },
+    {
+      "id": "twelve-labs",
+      "name": "Twelve Labs",
+      "careers_url": "https://twelvelabs.io/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series A",
+      "focus": "Video AI",
+      "tier": 2,
+      "claimed_platform": "Ashby"
+    },
+    {
+      "id": "unlearn-ai",
+      "name": "Unlearn AI",
+      "careers_url": "https://www.unlearn.ai/careers",
+      "hq": "San Francisco",
+      "size": "51-100",
+      "stage": "Series B",
+      "focus": "Healthcare AI",
+      "tier": 2
+    },
+    {
+      "id": "vannevar-labs",
+      "name": "Vannevar Labs",
+      "careers_url": "https://www.vannevarlabs.com/careers",
+      "hq": "Palo Alto",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Defense AI",
+      "tier": 2
+    },
+    {
+      "id": "viz-ai",
+      "name": "Viz.ai",
+      "careers_url": "https://www.viz.ai/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series D",
+      "focus": "Healthcare AI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "weights-biases",
+      "name": "Weights & Biases",
+      "careers_url": "https://wandb.ai/site/careers",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Acquired",
+      "focus": "MLOps",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "weights-ai",
+      "name": "Weights AI (new)",
+      "careers_url": "https://weights.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Voice AI",
+      "tier": 2
+    },
+    {
+      "id": "windfall-ai",
+      "name": "Windfall AI",
+      "careers_url": "https://www.windfall.com/careers",
+      "hq": "San Francisco",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Predictive AI",
+      "tier": 2
+    },
+    {
+      "id": "writer",
+      "name": "Writer",
+      "careers_url": "https://writer.com/company/careers/",
+      "hq": "San Francisco",
+      "size": "500-1000",
+      "stage": "Series C",
+      "focus": "Enterprise GenAI",
+      "tier": 2,
+      "claimed_platform": "Greenhouse"
+    },
+    {
+      "id": "writerly-ai",
+      "name": "Writerly AI",
+      "careers_url": "https://writerly.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Content AI",
+      "tier": 2
+    },
+    {
+      "id": "xai",
+      "name": "xAI (Bay Area)",
+      "careers_url": "https://x.ai/careers",
+      "hq": "San Francisco",
+      "size": "1000+",
+      "stage": "Private",
+      "focus": "Foundation Models",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    },
+    {
+      "id": "you-com",
+      "name": "You.com",
+      "careers_url": "https://you.com/careers",
+      "hq": "Palo Alto",
+      "size": "100-250",
+      "stage": "Series B",
+      "focus": "AI Search",
+      "tier": 2,
+      "claimed_platform": "Lever"
+    },
+    {
+      "id": "zeta-alpha-ai",
+      "name": "Zeta Alpha AI",
+      "careers_url": "https://zeta-alpha.com/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "Enterprise search AI",
+      "tier": 2
+    },
+    {
+      "id": "zilliz",
+      "name": "Zilliz (Milvus)",
+      "careers_url": "https://zilliz.com/careers",
+      "hq": "Redwood City",
+      "size": "101-250",
+      "stage": "Series B",
+      "focus": "Vector DB",
+      "tier": 2
+    },
+    {
+      "id": "zinc-ai",
+      "name": "Zinc AI",
+      "careers_url": "https://zinc.ai/careers",
+      "hq": "San Francisco",
+      "size": "11-50",
+      "stage": "Seed",
+      "focus": "AI Recruiting",
+      "tier": 2
+    },
+    {
+      "id": "zoox",
+      "name": "Zoox",
+      "careers_url": "https://zoox.com/careers/",
+      "hq": "Foster City",
+      "size": "1000+",
+      "stage": "Acquired",
+      "focus": "Autonomous Vehicles",
+      "tier": 2,
+      "claimed_platform": "Custom"
+    }
+  ]
+}
