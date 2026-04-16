@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "buildCommand": "python3 scripts/build_companies.py",
+  "outputDirectory": "public",
+  "framework": null,
+  "crons": [
+    {
+      "path": "/api/scan",
+      "schedule": "0 14 * * *"
+    }
+  ],
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 300
+    }
+  }
+}

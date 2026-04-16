@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+.vercel
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+
+# Build artifacts that should be regenerated
+# (companies.json is built by the build script; keep it out of source control
+# OR commit it — either works. Easier for MVP to commit it.)
+# public/companies.json
+
+# Local dev data
+data/*.csv
+!data/README.md
