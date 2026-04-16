@@ -3,6 +3,12 @@
 -- Assumes Supabase Auth is enabled (it is by default).
 
 -- =============================================================================
+-- EXTENSIONS — must come first so indexes below can use them
+-- =============================================================================
+create extension if not exists pg_trgm;    -- fuzzy text search (so "pm" matches "Product Manager")
+
+
+-- =============================================================================
 -- JOBS — cached job listings from the daily scan
 -- This table is shared across all users. Populated by the scan job.
 -- Not user-scoped, so no RLS needed for read — anyone logged in can see the cache.
@@ -28,9 +34,6 @@ create index if not exists jobs_company_idx on public.jobs (company_id);
 create index if not exists jobs_first_seen_idx on public.jobs (first_seen_at desc);
 create index if not exists jobs_active_idx on public.jobs (is_active) where is_active = true;
 create index if not exists jobs_title_trgm_idx on public.jobs using gin (title gin_trgm_ops);
-
--- Enable trigram extension for fuzzy title search (so "pm" matches "Product Manager")
-create extension if not exists pg_trgm;
 
 -- Anyone authenticated can read the cache, no one can write via API
 alter table public.jobs enable row level security;
