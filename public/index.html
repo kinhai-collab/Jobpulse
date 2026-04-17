@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobPulse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    [x-cloak] { display: none !important; }
+    body { font-family: 'DM Sans', system-ui, sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0a0f1a 0%, #172033 50%, #1a1a2e 100%); }
+    .card-glass { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); }
+    .card-glass:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
+    .metric-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); }
+    .status-new { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.2); }
+    .status-applied { background: rgba(16,185,129,0.15); color: #34d399; border: 1px solid rgba(16,185,129,0.2); }
+    .input-dark { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #e2e8f0; }
+    .input-dark:focus { border-color: rgba(59,130,246,0.5); outline: none; box-shadow: 0 0 0 2px rgba(59,130,246,0.15); }
+    .input-dark::placeholder { color: rgba(255,255,255,0.3); }
+    .btn-primary { background: linear-gradient(135deg, #3b82f6, #2563eb); transition: all 0.2s; }
+    .btn-primary:hover { background: linear-gradient(135deg, #60a5fa, #3b82f6); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(59,130,246,0.3); }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-ghost { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); transition: all 0.15s; }
+    .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
+    .fade-in { animation: fadeIn 0.3s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .pulse-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+  </style>
+</head>
+<body class="gradient-bg min-h-screen text-slate-200">
+
+  <div id="app-root" x-data="jobpulse" x-cloak>
+
+    <!-- LOGIN -->
+    <div x-show="!user" class="min-h-screen flex items-center justify-center px-4">
+      <div class="w-full max-w-sm fade-in">
+        <div class="text-center mb-8">
+          <div class="inline-flex items-center gap-2 mb-4">
+            <div class="pulse-dot"></div>
+            <span class="font-mono text-xs text-slate-400 tracking-wider uppercase">Live</span>
+          </div>
+          <h1 class="text-3xl font-semibold text-white tracking-tight">JobPulse</h1>
+          <p class="text-slate-400 text-sm mt-2">Daily AI PM job tracker</p>
+        </div>
+        <div class="card-glass rounded-xl p-6">
+          <div class="flex gap-1 mb-6 bg-black/20 rounded-lg p-1">
+            <button @click="authMode='login'" :class="authMode==='login' ? 'bg-white/10 text-white' : 'text-slate-400'" class="flex-1 py-2 rounded-md text-sm font-medium transition-all">Sign in</button>
+            <button @click="authMode='signup'" :class="authMode==='signup' ? 'bg-white/10 text-white' : 'text-slate-400'" class="flex-1 py-2 rounded-md text-sm font-medium transition-all">Sign up</button>
+          </div>
+          <div class="space-y-3">
+            <input type="email" x-model="email" placeholder="Email" @keydown.enter="doAuth()" class="input-dark w-full px-4 py-2.5 rounded-lg text-sm">
+            <input type="password" x-model="password" placeholder="Password" @keydown.enter="doAuth()" class="input-dark w-full px-4 py-2.5 rounded-lg text-sm">
+          </div>
+          <div x-show="authError" class="mt-3 text-red-400 text-xs bg-red-400/10 rounded-lg px-3 py-2" x-text="authError"></div>
+          <button @click="doAuth()" :disabled="authLoading" class="btn-primary w-full mt-4 py-2.5 rounded-lg text-sm font-medium text-white disabled:opacity-50">
+            <span x-show="!authLoading" x-text="authMode==='login' ? 'Sign in' : 'Create account'"></span>
+            <span x-show="authLoading">Loading...</span>
+          </button>
+        </div>
+        <p class="text-center text-slate-500 text-xs mt-6">Tracking PM roles across Bay Area AI companies</p>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div x-show="user" class="min-h-screen fade-in">
+      <header class="border-b border-white/5 px-4 sm:px-6 py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="pulse-dot"></div>
+            <h1 class="text-lg font-semibold text-white tracking-tight">JobPulse</h1>
+            <span class="text-xs text-slate-500 hidden sm:inline" x-text="companies.length + ' companies'"></span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-slate-500 hidden sm:inline" x-text="user ? user.email : ''"></span>
+            <div class="flex gap-1 bg-black/20 rounded-lg p-0.5">
+              <button @click="tab='jobs'" :class="tab==='jobs' ? 'bg-white/10 text-white' : 'text-slate-400'" class="px-3 py-1.5 rounded-md text-xs font-medium transition-all">Jobs</button>
+              <button @click="tab='applied'" :class="tab==='applied' ? 'bg-white/10 text-white' : 'text-slate-400'" class="px-3 py-1.5 rounded-md text-xs font-medium transition-all">Applied</button>
+            </div>
+            <button @click="logout()" class="btn-ghost px-3 py-1.5 rounded-md text-xs text-slate-400">Sign out</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="max-w-6xl mx-auto px-4 sm:px-6 py-6">
+        <!-- JOBS TAB -->
+        <div x-show="tab==='jobs'">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
+            <div class="metric-card rounded-xl px-4 py-3">
+              <p class="text-[11px] text-slate-500 uppercase tracking-wider mb-1">New today</p>
+              <p class="text-2xl font-semibold text-white" x-text="countNewToday()"></p>
+            </div>
+            <div class="metric-card rounded-xl px-4 py-3">
+              <p class="text-[11px] text-slate-500 uppercase tracking-wider mb-1">This week</p>
+              <p class="text-2xl font-semibold text-white" x-text="countThisWeek()"></p>
+            </div>
+            <div class="metric-card rounded-xl px-4 py-3">
+              <p class="text-[11px] text-slate-500 uppercase tracking-wider mb-1">Applied</p>
+              <p class="text-2xl font-semibold text-white" x-text="countApplied()"></p>
+            </div>
+            <div class="metric-card rounded-xl px-4 py-3">
+              <p class="text-[11px] text-slate-500 uppercase tracking-wider mb-1">Companies</p>
+              <p class="text-2xl font-semibold text-white" x-text="countCompanies()"></p>
+            </div>
+          </div>
+
+          <div class="card-glass rounded-xl px-4 py-3 mb-4 flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
+            <input type="text" x-model="filterKeyword" placeholder="Filter by title..." class="input-dark flex-1 px-3 py-2 rounded-lg text-sm">
+            <select x-model="filterCompany" class="input-dark px-3 py-2 rounded-lg text-sm">
+              <option value="">All companies</option>
+              <template x-for="c in getCompaniesWithJobs()" :key="c">
+                <option :value="c" x-text="c"></option>
+              </template>
+            </select>
+            <button @click="refreshJobs()" :disabled="refreshing" class="btn-primary px-4 py-2 rounded-lg text-sm font-medium text-white whitespace-nowrap disabled:opacity-50">
+              <span x-show="!refreshing">Refresh</span>
+              <span x-show="refreshing">Scanning...</span>
+            </button>
+          </div>
+
+          <div x-show="!loading && getFilteredJobs().length > 0" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <template x-for="job in getFilteredJobs()" :key="job.id">
+              <div class="card-glass rounded-xl px-4 py-3 cursor-pointer transition-all"
+                :style="'border-left: 3px solid ' + (job.has_applied ? '#10b981' : isNew(job) ? '#3b82f6' : 'rgba(255,255,255,0.15)')"
+                @click="openJob(job)">
+                <div class="flex justify-between items-start mb-2">
+                  <span x-show="isNew(job) && !job.has_applied" class="status-new text-[10px] font-medium px-2 py-0.5 rounded-full uppercase tracking-wider">New</span>
+                  <span x-show="job.has_applied" class="status-applied text-[10px] font-medium px-2 py-0.5 rounded-full uppercase tracking-wider">Applied</span>
+                  <span x-show="!isNew(job) && !job.has_applied" class="text-[10px] text-slate-500" x-text="timeAgo(job.first_seen_at)"></span>
+                  <span class="text-[10px] text-slate-500" x-text="timeAgo(job.first_seen_at)"></span>
+                </div>
+                <p class="text-sm font-medium text-white mb-1 leading-tight" x-text="job.title"></p>
+                <p class="text-xs text-slate-400">
+                  <span x-text="job.company_name"></span>
+                  <span x-show="job.location"> · <span x-text="job.location"></span></span>
+                  <span x-show="job.salary_min || job.salary_max"> · <span x-text="formatSalary(job.salary_min, job.salary_max)"></span></span>
+                </p>
+              </div>
+            </template>
+          </div>
+
+          <div x-show="!loading && getFilteredJobs().length === 0" class="text-center py-16">
+            <p class="text-slate-500 text-sm" x-show="jobs.length === 0">No jobs yet. Click <span class="text-blue-400">Refresh</span> to run your first scan.</p>
+            <p class="text-slate-500 text-sm" x-show="jobs.length > 0">No jobs match your filters.</p>
+          </div>
+
+          <div x-show="loading" class="text-center py-16">
+            <p class="text-slate-500 text-sm">Loading jobs...</p>
+          </div>
+        </div>
+
+        <!-- APPLIED TAB -->
+        <div x-show="tab==='applied'">
+          <h2 class="text-lg font-semibold text-white mb-4">My applications</h2>
+          <div x-show="appliedJobs.length > 0" class="space-y-3">
+            <template x-for="a in appliedJobs" :key="a.id">
+              <div class="card-glass rounded-xl px-4 py-3" style="border-left: 3px solid #10b981;">
+                <div class="flex justify-between items-start mb-1">
+                  <p class="text-sm font-medium text-white" x-text="a.title"></p>
+                  <span class="text-[10px] text-slate-500" x-text="new Date(a.applied_at).toLocaleDateString()"></span>
+                </div>
+                <p class="text-xs text-slate-400">
+                  <span x-text="a.company_name"></span>
+                  <span x-show="a.resume_version"> · Resume: <span x-text="a.resume_version"></span></span>
+                </p>
+              </div>
+            </template>
+          </div>
+          <div x-show="appliedJobs.length === 0" class="text-center py-16">
+            <p class="text-slate-500 text-sm">No applications yet. Browse jobs and mark them as applied.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- JOB DETAIL MODAL -->
+    <template x-if="selectedJob">
+      <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4" @click.self="selectedJob=null">
+        <div class="card-glass rounded-2xl w-full max-w-lg max-h-[80vh] overflow-y-auto p-6 fade-in" @click.stop>
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <p class="text-lg font-semibold text-white" x-text="selectedJob.title"></p>
+              <p class="text-sm text-slate-400 mt-0.5">
+                <span x-text="selectedJob.company_name"></span>
+                <span x-show="selectedJob.location"> · <span x-text="selectedJob.location"></span></span>
+              </p>
+            </div>
+            <button @click="selectedJob=null" class="text-slate-500 hover:text-white text-lg px-2">×</button>
+          </div>
+          <div x-show="selectedJob.salary_min || selectedJob.salary_max" class="mb-4">
+            <span class="text-sm text-slate-300" x-text="formatSalary(selectedJob.salary_min, selectedJob.salary_max)"></span>
+          </div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="text-[10px] font-medium px-2 py-0.5 rounded-full" style="background:rgba(139,92,246,0.15);color:#a78bfa;border:1px solid rgba(139,92,246,0.2)" x-text="selectedJob.source"></span>
+            <span class="text-[10px] text-slate-500">First seen <span x-text="new Date(selectedJob.first_seen_at).toLocaleDateString()"></span></span>
+          </div>
+          <div class="flex flex-col gap-3 mt-6">
+            <a :href="selectedJob.url" target="_blank" rel="noopener" class="btn-primary text-center py-2.5 rounded-lg text-sm font-medium text-white block">Apply now →</a>
+            <div x-show="!selectedJob.has_applied" class="flex gap-2">
+              <input type="text" x-model="applyResumeVersion" placeholder="Resume version (optional)" class="input-dark flex-1 px-3 py-2 rounded-lg text-sm">
+              <button @click="markApplied()" :disabled="applyLoading" class="btn-ghost px-4 py-2 rounded-lg text-sm text-slate-300 whitespace-nowrap disabled:opacity-50">
+                <span x-show="!applyLoading">Mark applied</span>
+                <span x-show="applyLoading">Saving...</span>
+              </button>
+            </div>
+            <div x-show="selectedJob.has_applied" class="text-center">
+              <span class="status-applied text-xs font-medium px-3 py-1 rounded-full">
+                Applied <span x-text="selectedJob.applied_at ? new Date(selectedJob.applied_at).toLocaleDateString() : ''"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+  </div>
+
+  <!-- Loading fallback -->
+  <div id="loading-fallback" class="min-h-screen flex items-center justify-center" style="position:absolute;inset:0;z-index:1;">
+    <p class="text-slate-400 text-sm">Loading JobPulse...</p>
+  </div>
+
+  <script>
+    var SUPABASE_URL = 'https://vnkgseafftmaykypbscv.supabase.co';
+    var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZua2dzZWFmZnRtYXlreXBic2N2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYzMDQ0NTMsImV4cCI6MjA5MTg4MDQ1M30.Zkg9u9KI02uDjOYHAOCcHBQ5_c6o5iIk-XpfJvwjiFk';
+    var sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    document.addEventListener('alpine:init', function() {
+      var fb = document.getElementById('loading-fallback');
+      if (fb) fb.style.display = 'none';
+
+      Alpine.data('jobpulse', function() {
+        return {
+          user: null,
+          email: '',
+          password: '',
+          authMode: 'login',
+          authError: '',
+          authLoading: false,
+          companies: [],
+          jobs: [],
+          appliedJobs: [],
+          loading: false,
+          refreshing: false,
+          tab: 'jobs',
+          filterKeyword: '',
+          filterCompany: '',
+          selectedJob: null,
+          applyResumeVersion: '',
+          applyLoading: false,
+
+          init: function() {
+            var self = this;
+            sb.auth.getSession().then(function(result) {
+              if (result.data.session) {
+                self.user = result.data.session.user;
+                self.loadData();
+              }
+            });
+            sb.auth.onAuthStateChange(function(event, session) {
+              self.user = session ? session.user : null;
+              if (self.user) self.loadData();
+            });
+          },
+
+          doAuth: function() {
+            var self = this;
+            self.authError = '';
+            self.authLoading = true;
+            var p;
+            if (self.authMode === 'login') {
+              p = sb.auth.signInWithPassword({ email: self.email, password: self.password });
+            } else {
+              p = sb.auth.signUp({ email: self.email, password: self.password });
+            }
+            p.then(function(result) {
+              self.authLoading = false;
+              if (result.error) self.authError = result.error.message;
+            });
+          },
+
+          logout: function() {
+            var self = this;
+            sb.auth.signOut().then(function() {
+              self.user = null;
+              self.jobs = [];
+              self.appliedJobs = [];
+            });
+          },
+
+          loadData: function() {
+            var self = this;
+            self.loading = true;
+            fetch('/companies.json')
+              .then(function(r) { return r.json(); })
+              .then(function(data) { self.companies = data.companies || []; })
+              .catch(function(e) { console.error('companies.json error:', e); })
+              .then(function() { return self.loadJobs(); })
+              .then(function() { return self.loadApplications(); })
+              .then(function() { self.loading = false; });
+          },
+
+          loadJobs: function() {
+            var self = this;
+            return sb.from('jobs_with_my_status').select('*').order('first_seen_at', { ascending: false }).limit(500)
+              .then(function(result) {
+                if (!result.error && result.data) self.jobs = result.data;
+              });
+          },
+
+          loadApplications: function() {
+            var self = this;
+            return sb.from('applications').select('*, jobs(title, company_name, url)').order('applied_at', { ascending: false })
+              .then(function(result) {
+                if (!result.error && result.data) {
+                  self.appliedJobs = result.data.map(function(a) {
+                    return {
+                      id: a.id,
+                      applied_at: a.applied_at,
+                      resume_version: a.resume_version,
+                      title: a.jobs ? a.jobs.title : 'Unknown',
+                      company_name: a.jobs ? a.jobs.company_name : 'Unknown',
+                      url: a.jobs ? a.jobs.url : '#'
+                    };
+                  });
+                }
+              });
+          },
+
+          refreshJobs: function() {
+            var self = this;
+            self.refreshing = true;
+            var tier1 = self.companies.filter(function(c) { return c.tier === 1 && c.ats && c.ats.api_url; });
+            var allJobs = [];
+            var errors = [];
+
+            var promises = tier1.map(function(company) {
+              return fetch(company.ats.api_url)
+                .then(function(resp) {
+                  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+                  return resp.json();
+                })
+                .then(function(data) {
+                  var jobs = [];
+                  if (company.ats.platform === 'Greenhouse') {
+                    jobs = (data.jobs || []).map(function(j) { return self.normalizeGreenhouse(j, company); });
+                  } else if (company.ats.platform === 'Lever') {
+                    jobs = (Array.isArray(data) ? data : []).map(function(j) { return self.normalizeLever(j, company); });
+                  } else if (company.ats.platform === 'Ashby') {
+                    jobs = (data.jobs || []).map(function(j) { return self.normalizeAshby(j, company); });
+                  }
+                  allJobs = allJobs.concat(jobs);
+                })
+                .catch(function(e) {
+                  errors.push({ company: company.name, error: e.message });
+                });
+            });
+
+            Promise.all(promises).then(function() {
+              var pmPattern = /product\s*manag|program\s*manag|technical\s*program|tpm\b|chief\s*product|vp.*product|head.*product|director.*product/i;
+              var pmJobs = allJobs.filter(function(j) { return pmPattern.test(j.title); });
+
+              if (pmJobs.length > 0) {
+                var rows = pmJobs.map(function(j) {
+                  return {
+                    id: j.id, company_id: j.company_id, company_name: j.company_name,
+                    title: j.title, location: j.location, url: j.url,
+                    salary_min: j.salary_min, salary_max: j.salary_max,
+                    posted_at: j.posted_at, first_seen_at: new Date().toISOString(),
+                    last_seen_at: new Date().toISOString(), is_active: true, source: j.source
+                  };
+                });
+                return sb.from('jobs').upsert(rows, { onConflict: 'id', ignoreDuplicates: false })
+                  .then(function(result) {
+                    if (result.error) console.error('Upsert error:', result.error);
+                    console.log('Scan: ' + allJobs.length + ' total, ' + pmJobs.length + ' PM roles, ' + errors.length + ' errors');
+                  });
+              } else {
+                console.log('Scan: ' + allJobs.length + ' total, 0 PM roles, ' + errors.length + ' errors');
+              }
+            }).then(function() {
+              return self.loadJobs();
+            }).then(function() {
+              self.refreshing = false;
+            });
+          },
+
+          normalizeGreenhouse: function(j, company) {
+            return {
+              id: company.id + ':gh:' + j.id,
+              company_id: company.id, company_name: company.name,
+              title: j.title || '', location: (j.location && j.location.name) ? j.location.name : '',
+              url: j.absolute_url || company.careers_url,
+              salary_min: null, salary_max: null,
+              posted_at: j.updated_at || null, source: 'greenhouse'
+            };
+          },
+
+          normalizeLever: function(j, company) {
+            var loc = (j.categories && j.categories.location) ? j.categories.location : '';
+            return {
+              id: company.id + ':lv:' + j.id,
+              company_id: company.id, company_name: company.name,
+              title: j.text || '', location: loc,
+              url: j.hostedUrl || j.applyUrl || company.careers_url,
+              salary_min: null, salary_max: null,
+              posted_at: j.createdAt ? new Date(j.createdAt).toISOString() : null, source: 'lever'
+            };
+          },
+
+          normalizeAshby: function(j, company) {
+            var loc = j.location || '';
+            if (typeof loc !== 'string') loc = loc.name || '';
+            return {
+              id: company.id + ':ab:' + j.id,
+              company_id: company.id, company_name: company.name,
+              title: j.title || '', location: loc,
+              url: j.jobUrl || j.applicationUrl || company.careers_url,
+              salary_min: null, salary_max: null,
+              posted_at: j.publishedAt || null, source: 'ashby'
+            };
+          },
+
+          markApplied: function() {
+            var self = this;
+            if (!self.selectedJob) return;
+            self.applyLoading = true;
+            sb.from('applications').insert({
+              user_id: self.user.id,
+              job_id: self.selectedJob.id,
+              resume_version: self.applyResumeVersion || null
+            }).then(function(result) {
+              if (result.error) {
+                console.error('Apply error:', result.error);
+              } else {
+                self.selectedJob.has_applied = true;
+                self.selectedJob.applied_at = new Date().toISOString();
+                self.loadJobs().then(function() { return self.loadApplications(); });
+              }
+              self.applyResumeVersion = '';
+              self.applyLoading = false;
+            });
+          },
+
+          openJob: function(job) {
+            this.selectedJob = JSON.parse(JSON.stringify(job));
+            this.applyResumeVersion = '';
+          },
+
+          getFilteredJobs: function() {
+            var self = this;
+            return self.jobs.filter(function(j) {
+              if (self.filterKeyword) {
+                var kw = self.filterKeyword.toLowerCase();
+                if (j.title.toLowerCase().indexOf(kw) === -1 && j.company_name.toLowerCase().indexOf(kw) === -1) return false;
+              }
+              if (self.filterCompany && j.company_name !== self.filterCompany) return false;
+              return true;
+            });
+          },
+
+          getCompaniesWithJobs: function() {
+            var names = {};
+            this.jobs.forEach(function(j) { names[j.company_name] = true; });
+            return Object.keys(names).sort();
+          },
+
+          countNewToday: function() {
+            var today = new Date(); today.setHours(0,0,0,0);
+            return this.jobs.filter(function(j) { return new Date(j.first_seen_at) >= today; }).length;
+          },
+          countThisWeek: function() {
+            var d = new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate() - 7);
+            return this.jobs.filter(function(j) { return new Date(j.first_seen_at) >= d; }).length;
+          },
+          countApplied: function() {
+            return this.jobs.filter(function(j) { return j.has_applied; }).length;
+          },
+          countCompanies: function() {
+            var ids = {};
+            this.jobs.forEach(function(j) { ids[j.company_id] = true; });
+            return Object.keys(ids).length;
+          },
+
+          isNew: function(job) {
+            return (Date.now() - new Date(job.first_seen_at).getTime()) < 86400000;
+          },
+
+          timeAgo: function(dateStr) {
+            if (!dateStr) return '';
+            var diff = Date.now() - new Date(dateStr).getTime();
+            var mins = Math.floor(diff / 60000);
+            if (mins < 60) return mins + 'm ago';
+            var hrs = Math.floor(mins / 60);
+            if (hrs < 24) return hrs + 'h ago';
+            return Math.floor(hrs / 24) + 'd ago';
+          },
+
+          formatSalary: function(min, max) {
+            var a = min ? ('$' + Math.round(min/1000) + 'K') : null;
+            var b = max ? ('$' + Math.round(max/1000) + 'K') : null;
+            if (a && b) return a + '\u2013' + b;
+            if (a) return a + '+';
+            if (b) return 'up to ' + b;
+            return '';
+          }
+        };
+      });
+    });
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+</body>
+</html>
