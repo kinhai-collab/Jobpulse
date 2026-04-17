@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "outputDirectory": "public"
+  "outputDirectory": "public",
+  "crons": [{ "path": "/api/scan", "schedule": "0 14 * * *" }],
+  "functions": { "api/*.js": { "maxDuration": 300 } }
 }

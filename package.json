@@ -2,7 +2,16 @@
   "name": "jobpulse",
   "version": "0.1.0",
   "private": true,
+  "description": "Daily PM/Program Manager job tracker for Bay Area AI companies",
   "scripts": {
-    "build": "echo 'Static site — no build needed'"
+    "build": "python3 scripts/build_companies.py",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@supabase/supabase-js": "^2.45.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
