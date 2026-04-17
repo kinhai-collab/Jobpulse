@@ -1,0 +1,185 @@
+Company Name,Career Page URL,Headquarters City,Company Size,Funding Stage,Last Known Funding Amount,AI Focus Area,ATS Platform,Notes,ATS Platform (enriched),ATS Slug,ATS API URL
+Abnormal Security,https://abnormal.ai/careers,San Francisco,1000+,Series D,,AI Security,,Strong enterprise PM hiring,Greenhouse,abnormalsecurity,https://boards-api.greenhouse.io/v1/boards/abnormalsecurity/jobs
+Adept,https://www.adept.ai/careers,San Francisco,100-250,Series B,,Agentic AI,,Ex-OpenAI talent,Custom,,
+Adobe,https://careers.adobe.com/us/en,San Jose,10000+,Public,,Creative AI / GenAI,,Firefly + AI PM roles,Workday,adobe,
+AiDash,https://www.aidash.com/careers/,Palo Alto,251-500,Series C,,Climate AI,,Has PM org,Unknown,,
+Aisera,https://aisera.com/careers/,Palo Alto,251-500,Acquired,,Enterprise AI,Greenhouse,Now under Automation Anywhere,Greenhouse,aisera,https://boards-api.greenhouse.io/v1/boards/aisera/jobs
+AKASA,https://akasa.com/careers/,South San Francisco,251-500,Series C,,Healthcare AI,,Revenue cycle AI,Greenhouse,akasa,https://boards-api.greenhouse.io/v1/boards/akasa/jobs
+Alation,https://www.alation.com/careers/,Redwood City,501-1000,Series D,,Data + AI,,Enterprise PM roles,Greenhouse,alation,https://boards-api.greenhouse.io/v1/boards/alation/jobs
+Alchemy,https://www.alchemy.com/careers,San Francisco,500-1000,Series C,,Developer Platform / AI infra,,Strong growth,Greenhouse,alchemy,https://boards-api.greenhouse.io/v1/boards/alchemy/jobs
+Amazon (AWS AI),https://www.amazon.jobs/en/,Sunnyvale,10000+,Public,,AI Cloud / Infra,,Heavy TPM hiring,Custom,,
+Ambi Robotics,https://www.ambirobotics.com/careers,Berkeley,11-50,Series A,,Robotics,,Warehouse AI,Unknown,,
+Ambient.ai,https://www.ambient.ai/careers,Redwood City,101-250,Series B,,AI Security,Ashby,Good PM signal,Ashby,ambient,https://api.ashbyhq.com/posting-api/job-board/ambient
+Amplitude,https://amplitude.com/careers,San Francisco,1000+,Public,,Product Analytics + AI,,PM heavy,Greenhouse,amplitude,https://boards-api.greenhouse.io/v1/boards/amplitude/jobs
+Anyscale,https://www.anyscale.com/careers,San Francisco,251-500,Series C,,AI Infra / Ray,,Infra PM roles,Greenhouse,anyscale,https://boards-api.greenhouse.io/v1/boards/anyscale/jobs
+Anthropic,https://www.anthropic.com/careers,San Francisco,2500+,Late Stage,,Foundation Models,,Top target,Greenhouse,anthropic,https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+Apple (AI/ML),https://jobs.apple.com/en-us/search,Cupertino,10000+,Public,,Consumer AI,,ML + platform PMs,Custom,,
+Arize AI,https://arize.com/careers/,Berkeley,101-250,Series C,,AI Observability,Greenhouse,Hot category,Greenhouse,arizeai,https://boards-api.greenhouse.io/v1/boards/arizeai/jobs
+AssemblyAI,https://www.assemblyai.com/careers,San Francisco,51-100,Series B,,Speech AI,,API-first product,Greenhouse,assemblyai,https://boards-api.greenhouse.io/v1/boards/assemblyai/jobs
+Atropos Health,https://www.atroposhealth.com/careers/,Palo Alto,51-100,Series A,,Healthcare AI,,Clinical AI,Unknown,,
+Augment Code,https://www.augmentcode.com/careers,Palo Alto,101-250,Series B,,AI Coding,,Competing w/ Copilot,Ashby,augmentcode,https://api.ashbyhq.com/posting-api/job-board/augmentcode
+Avaamo,https://avaamo.ai/careers/,Los Altos,101-250,Series B,,Enterprise AI,,TPM roles exist,Unknown,,
+Bardeen,https://jobs.ashbyhq.com/bardeen,San Francisco,11-50,Series A,,AI Agents,Ashby,Automation agents,Ashby,bardeen,https://api.ashbyhq.com/posting-api/job-board/bardeen
+Baseten,https://www.baseten.co/careers,San Francisco,51-100,Series E,$300M,Inference Infra,,Hot infra layer,Greenhouse,baseten,https://boards-api.greenhouse.io/v1/boards/baseten/jobs
+BigID,https://bigid.com/careers/,Redwood City,501-1000,Series D,,AI Security,,Enterprise GTM PMs,Greenhouse,bigid,https://boards-api.greenhouse.io/v1/boards/bigid/jobs
+Braintrust,https://www.braintrust.dev/careers,San Francisco,11-50,Series A,,AI Dev Tools,,Eval tooling,Ashby,braintrustdata,https://api.ashbyhq.com/posting-api/job-board/braintrustdata
+C3 AI,https://c3.ai/careers/,Redwood City,1000+,Public,,Enterprise AI,,Stable PM org,Greenhouse,c3iot,https://boards-api.greenhouse.io/v1/boards/c3iot/jobs
+Cartesia,https://jobs.ashbyhq.com/cartesia,San Francisco,11-50,Series A,$64M,Voice AI,Ashby,New voice startup,Ashby,cartesia,https://api.ashbyhq.com/posting-api/job-board/cartesia
+Cerebras Systems,https://www.cerebras.net/careers/,Sunnyvale,501-1000,Series F,,AI Chips,,Hardware + AI,Lever,cerebras,https://api.lever.co/v0/postings/cerebras?mode=json
+Character.AI,https://character.ai/careers,Menlo Park,100-250,Series A/B,,Consumer AI,,High growth,Custom,,
+Cohere,https://cohere.com/careers,Mountain View,500-1000,Series C,,Foundation Models,,Enterprise LLM,Greenhouse,cohere,https://boards-api.greenhouse.io/v1/boards/cohere/jobs
+Confluent (AI),https://www.confluent.io/careers/,Mountain View,1000+,Public,,Data + AI,,Streaming AI,Greenhouse,confluent,https://boards-api.greenhouse.io/v1/boards/confluent/jobs
+Contextual AI,https://www.contextual.ai/careers,Mountain View,11-50,Series A,$80M,RAG / LLM infra,,Emerging player,Ashby,contextualai,https://api.ashbyhq.com/posting-api/job-board/contextualai
+Cruise,https://getcruise.com/careers,San Francisco,1000+,Acquired,,Autonomous Vehicles,,GM backed,Workday,getcruise,
+Databricks,https://www.databricks.com/company/careers/open-positions,San Francisco,5000+,Late Stage,,Data + AI Platform,,Top PM org,Greenhouse,databricks,https://boards-api.greenhouse.io/v1/boards/databricks/jobs
+Dataiku,https://www.dataiku.com/careers/,San Francisco,1000+,Series E,,Enterprise AI,,Strong PM hiring,Greenhouse,dataiku,https://boards-api.greenhouse.io/v1/boards/dataiku/jobs
+Deepgram,https://deepgram.com/careers,San Francisco,100-250,Series B,,Speech AI,,API product,Greenhouse,deepgram,https://boards-api.greenhouse.io/v1/boards/deepgram/jobs
+Descript,https://www.descript.com/careers,San Francisco,100-250,Series C,,AI Media Editing,,Creator tools,Greenhouse,descript,https://boards-api.greenhouse.io/v1/boards/descript/jobs
+Domino Data Lab,https://www.dominodatalab.com/company/careers,San Francisco,501-1000,Series F,,MLOps,,Enterprise PM roles,Greenhouse,dominodatalab,https://boards-api.greenhouse.io/v1/boards/dominodatalab/jobs
+Dropbox (AI),https://jobs.dropbox.com/all-jobs,San Francisco,1000+,Public,,AI productivity,,Dash AI,Custom,,
+Eightfold AI,https://eightfold.ai/careers/,Mountain View,1000+,Series E,,HR AI,,Enterprise AI,Greenhouse,eightfoldai,https://boards-api.greenhouse.io/v1/boards/eightfoldai/jobs
+Element AI (ServiceNow),https://careers.servicenow.com,Santa Clara,10000+,Acquired,,Enterprise AI,,Via ServiceNow,Workday,servicenow,
+Fiddler AI,https://www.fiddler.ai/careers,San Francisco,51-100,Series B,,AI Observability,,Growing category,Greenhouse,fiddlerai,https://boards-api.greenhouse.io/v1/boards/fiddlerai/jobs
+Figure AI,https://www.figure.ai/careers,Sunnyvale,100-250,Series B,,Humanoid Robotics,,Hot startup,Greenhouse,figureai,https://boards-api.greenhouse.io/v1/boards/figureai/jobs
+Forethought,https://forethought.ai/careers,San Francisco,101-250,Series C,,Support AI,,PM roles,Unknown,,
+Glean,https://www.glean.com/careers,Palo Alto,500-1000,Series D,,Enterprise Search AI,,Top PM target,Greenhouse,glean,https://boards-api.greenhouse.io/v1/boards/glean/jobs
+Google (DeepMind/AI),https://careers.google.com/jobs/results/,Mountain View,10000+,Public,,AI / LLMs,,Huge org,Custom,,
+Groq,https://groq.com/careers/,Mountain View,100-250,Series C,,AI Chips,,Fast inference,Greenhouse,groq,https://boards-api.greenhouse.io/v1/boards/groq/jobs
+H2O.ai,https://h2o.ai/company/careers/,Mountain View,501-1000,Series E,,Enterprise AI,,AutoML,Greenhouse,h2oai,https://boards-api.greenhouse.io/v1/boards/h2oai/jobs
+Hugging Face (SF),https://huggingface.co/join-us,San Francisco,500-1000,Series D,,Open AI platform,,Community + PM,Greenhouse,huggingface,https://boards-api.greenhouse.io/v1/boards/huggingface/jobs
+Inflection AI,https://inflection.ai/careers,Palo Alto,100-250,Series B,,Foundation Models,,Pi assistant,Custom,,
+Instabase,https://www.instabase.com/careers/,San Francisco,500-1000,Series D,,Enterprise AI,,Document AI,Greenhouse,instabase,https://boards-api.greenhouse.io/v1/boards/instabase/jobs
+Intel AI,https://jobs.intel.com/,Santa Clara,10000+,Public,,AI Hardware,,Chip + SW,Workday,intel,
+Klaviyo AI,https://www.klaviyo.com/careers,San Francisco,1000+,Public,,Marketing AI,,PM heavy,Greenhouse,klaviyo,https://boards-api.greenhouse.io/v1/boards/klaviyo/jobs
+Lambda,https://lambda.ai/careers,San Jose,500-1000,Series E,$1.5B,AI Cloud,,Infra layer,Greenhouse,lambdalabs,https://boards-api.greenhouse.io/v1/boards/lambdalabs/jobs
+Lilt,https://lilt.com/careers/,San Francisco,101-250,Series C,,Translation AI,,NLP product,Lever,lilt,https://api.lever.co/v0/postings/lilt?mode=json
+Luma AI,https://lumalabs.ai/careers,San Francisco,51-100,Series B,,3D AI,,Vision models,Lever,lumalabs,https://api.lever.co/v0/postings/lumalabs?mode=json
+LlamaIndex,https://www.llamaindex.ai/careers,San Francisco,51-100,Series A,,AI Dev Tools,,Strong PM signal,Greenhouse,llamaindex,https://boards-api.greenhouse.io/v1/boards/llamaindex/jobs
+Matroid,https://www.matroid.com/careers,Palo Alto,51-100,Series B,,Vision AI,,Industrial AI,Lever,matroid,https://api.lever.co/v0/postings/matroid?mode=json
+Meta AI,https://www.metacareers.com/jobs,Menlo Park,10000+,Public,,AI / LLMs,,Massive hiring,Custom,,
+Mistral AI (US),https://mistral.ai/careers,Menlo Park,100-250,Series B,,Foundation Models,,Expanding US,Lever,mistral,https://api.lever.co/v0/postings/mistral?mode=json
+Moveworks,https://www.moveworks.com/us/en/company/careers,Mountain View,500-1000,Series D,,Enterprise AI,,Strong PM hiring,Greenhouse,moveworks,https://boards-api.greenhouse.io/v1/boards/moveworks/jobs
+Nuro,https://www.nuro.ai/careers,Mountain View,1000+,Series D,,Autonomous Vehicles,,Robotics + AI,Lever,nuro,https://api.lever.co/v0/postings/nuro?mode=json
+Nvidia,https://www.nvidia.com/en-us/about-nvidia/careers/,Santa Clara,10000+,Public,,AI Chips,,Top employer,Workday,nvidia,
+Observe.AI,https://www.observe.ai/careers,San Francisco,1000+,Series C,,Contact center AI,,PM org,Greenhouse,observeai,https://boards-api.greenhouse.io/v1/boards/observeai/jobs
+OpenAI,https://openai.com/careers,San Francisco,5000+,Late Stage,,Foundation Models,,Top target,Custom,,
+Otter.ai,https://otter.ai/careers,Mountain View,100-250,Series B,,Speech AI,,Consumer + B2B,Lever,otter,https://api.lever.co/v0/postings/otter?mode=json
+Perplexity,https://www.perplexity.ai/careers,San Francisco,100-250,Series C,$200M,AI Search,,Hiring PMs,Greenhouse,perplexityai,https://boards-api.greenhouse.io/v1/boards/perplexityai/jobs
+Pinecone,https://www.pinecone.io/careers/,San Mateo,100-250,Series B,,Vector DB,,Infra PM roles,Greenhouse,pinecone,https://boards-api.greenhouse.io/v1/boards/pinecone/jobs
+Replit AI,https://replit.com/careers,Foster City,100-250,Series B,,AI Coding,,Dev platform,Unknown,,
+Runway ML,https://runwayml.com/careers,San Francisco,100-250,Series C,,Generative Video,,Creative AI,Greenhouse,runwayml,https://boards-api.greenhouse.io/v1/boards/runwayml/jobs
+Scale AI,https://scale.com/careers,San Francisco,1000+,Series F,,AI Data,,PM roles,Greenhouse,scaleai,https://boards-api.greenhouse.io/v1/boards/scaleai/jobs
+Snorkel AI,https://snorkel.ai/careers/,Redwood City,251-500,Series D,,Data-centric AI,,Some layoffs noted,Greenhouse,snorkelai,https://boards-api.greenhouse.io/v1/boards/snorkelai/jobs
+SambaNova Systems,https://sambanova.ai/careers/,Palo Alto,500-1000,Series D,,AI Hardware,,Enterprise AI,Greenhouse,sambanova,https://boards-api.greenhouse.io/v1/boards/sambanova/jobs
+Sierra AI,https://sierra.ai/careers,San Francisco,100-250,Series B,,AI Agents,,Founded by ex-OpenAI,Ashby,sierra,https://api.ashbyhq.com/posting-api/job-board/sierra
+SoundHound AI,https://www.soundhound.com/careers/,Santa Clara,1000+,Public,,Voice AI,,Auto + enterprise,Greenhouse,soundhound,https://boards-api.greenhouse.io/v1/boards/soundhound/jobs
+Syntiant,https://www.syntiant.com/careers,Irvine/SF,251-500,Series D,,Edge AI Chips,,Hardware AI,Unknown,,
+Tempus AI (Bay Area),https://www.tempus.com/careers/,Redwood City,1000+,Public,,Healthcare AI,,Data + genomics,Greenhouse,tempuslabs,https://boards-api.greenhouse.io/v1/boards/tempuslabs/jobs
+Together AI,https://www.together.ai/careers,San Francisco,100-250,Series B,$305M,AI Infra,,Hot startup,Greenhouse,togetherai,https://boards-api.greenhouse.io/v1/boards/togetherai/jobs
+Twelve Labs,https://twelvelabs.io/careers,San Francisco,51-100,Series A,,Video AI,,Strong momentum,Ashby,twelvelabs,https://api.ashbyhq.com/posting-api/job-board/twelvelabs
+Unstructured.io,https://unstructured.io/careers,San Francisco,51-100,Series A,,Data for LLMs,,RAG ecosystem,Ashby,unstructured,https://api.ashbyhq.com/posting-api/job-board/unstructured
+Vercel AI,https://vercel.com/careers,San Francisco,500-1000,Series D,,AI Dev Platform,,Next.js AI,Greenhouse,vercel,https://boards-api.greenhouse.io/v1/boards/vercel/jobs
+Weights & Biases,https://wandb.ai/site/careers,San Francisco,500-1000,Acquired,,MLOps,,Now CoreWeave,Greenhouse,weightsandbiases,https://boards-api.greenhouse.io/v1/boards/weightsandbiases/jobs
+Writer,https://writer.com/company/careers/,San Francisco,500-1000,Series C,,Enterprise GenAI,,PM hiring,Greenhouse,writer,https://boards-api.greenhouse.io/v1/boards/writer/jobs
+xAI (Bay Area),https://x.ai/careers,San Francisco,1000+,Private,,Foundation Models,,Musk org,Custom,,
+You.com,https://you.com/careers,Palo Alto,100-250,Series B,,AI Search,,Consumer + enterprise,Lever,you,https://api.lever.co/v0/postings/you?mode=json
+Zoox,https://zoox.com/careers/,Foster City,1000+,Acquired,,Autonomous Vehicles,,Amazon owned,Custom,,
+Activeloop,https://www.activeloop.ai/careers,Mountain View,11-50,Series A,,AI Data Infrastructure,,Vector DB / dataset infra,Unknown,,
+Aible,https://www.aible.com/careers/,Pleasanton,51-100,Series B,,Enterprise AI,,Business-focused AI,Unknown,,
+Aixplain,https://www.aixplain.com/careers,Los Gatos,11-50,Seed,,AI Marketplace,,Early-stage,Unknown,,
+Allegro AI,https://clear.ml/careers,San Jose,51-100,Series B,,MLOps,,ClearML platform,Unknown,,
+Allganize,https://www.allganize.ai/careers,Sunnyvale,51-100,Series B,,Enterprise AI,,Search + LLM,Unknown,,
+Almanac AI,https://www.almanac.io/careers,San Francisco,51-100,Series A,,AI Collaboration,,Docs + AI,Unknown,,
+Alpaca ML,https://alpaca.markets/careers,San Mateo,100-250,Series C,,AI Finance,,Trading APIs,Unknown,,
+Anomalo,https://www.anomalo.com/careers,San Francisco,51-100,Series B,,AI Data Quality,,Growing fast,Unknown,,
+Aporia,https://www.aporia.com/careers,San Francisco,51-100,Series B,,AI Observability,,Competes w/ Arize,Unknown,,
+Appen (AI ops),https://appen.com/careers,Sunnyvale,1000+,Public,,AI Data,,Annotation leader,Unknown,,
+Aquant,https://www.aquant.ai/careers,San Francisco,51-100,Series B,,Service AI,,Predictive support,Unknown,,
+Arrcus AI,https://arrcus.com/careers/,San Jose,251-500,Series D,,AI Networking,,Infra heavy,Unknown,,
+Atlan,https://atlan.com/careers,San Francisco,500-1000,Series C,,Data + AI Catalog,,PM hiring strong,Greenhouse,atlan,https://boards-api.greenhouse.io/v1/boards/atlan/jobs
+Atlassian AI,https://www.atlassian.com/company/careers,San Francisco,10000+,Public,,AI Productivity,,Rovo AI,Workday,atlassian,
+Ava Labs (AI infra),https://www.avalabs.org/careers,San Francisco,100-250,Series B,,AI + Blockchain,,Infra crossover,Unknown,,
+Ayasdi AI,https://www.symphonyai.com/careers/,Palo Alto,1000+,Acquired,,Enterprise AI,,Now SymphonyAI,Custom,,
+Bend AI,https://bend.ai/careers,San Francisco,11-50,Seed,,AI Agents,,Early stage,Unknown,,
+BigPanda AI,https://www.bigpanda.io/careers/,Redwood City,501-1000,Series D,,AIOps,,Enterprise PM roles,Greenhouse,bigpanda,https://boards-api.greenhouse.io/v1/boards/bigpanda/jobs
+Blue River Tech,https://www.bluerivertechnology.com/careers,Sunnyvale,251-500,Acquired,,Agri AI / Robotics,,John Deere,Custom,,
+Bonsai AI (Microsoft),https://careers.microsoft.com,San Francisco,10000+,Acquired,,AI Control Systems,,Via Microsoft,Custom,,
+CausaLens,https://causalens.com/careers,San Francisco,51-100,Series B,,Causal AI,,Emerging category,Unknown,,
+Clarifai,https://www.clarifai.com/careers,San Francisco,101-250,Series B,,Vision AI,,Enterprise tools,Unknown,,
+Clockwise AI,https://www.getclockwise.com/careers,San Francisco,101-250,Series B,,Productivity AI,,Calendar AI,Lever,getclockwise,https://api.lever.co/v0/postings/getclockwise?mode=json
+Cognitivescale,https://www.cognitivescale.com/careers,Austin/SF,251-500,Series C,,Enterprise AI,,Regulated AI,Unknown,,
+Cohesity (AI),https://www.cohesity.com/careers,San Jose,1000+,Private,,AI + Data Security,,Platform PM roles,Workday,cohesity,
+Common Room AI,https://www.commonroom.io/careers,San Francisco,101-250,Series B,,AI GTM tools,,Fast growth,Ashby,commonroom,https://api.ashbyhq.com/posting-api/job-board/commonroom
+Cresta AI,https://cresta.com/careers/,San Francisco,251-500,Series C,,Contact Center AI,,PM org,Greenhouse,cresta,https://boards-api.greenhouse.io/v1/boards/cresta/jobs
+DataRobot,https://www.datarobot.com/careers/,San Francisco,1000+,Series G,,AutoML,,Enterprise focus,Greenhouse,datarobot,https://boards-api.greenhouse.io/v1/boards/datarobot/jobs
+Decagon AI,https://decagon.ai/careers,San Francisco,11-50,Seed,,AI Agents,,Hot startup,Ashby,decagon,https://api.ashbyhq.com/posting-api/job-board/decagon
+Deep Sentinel AI,https://www.deepsentinel.com/careers,Pleasanton,51-100,Series B,,AI Security,,Vision AI,Unknown,,
+Diffbot,https://www.diffbot.com/careers/,Mountain View,51-100,Series B,,Knowledge Graph AI,,Web data,Lever,diffbot,https://api.lever.co/v0/postings/diffbot?mode=json
+Doxel AI,https://www.doxel.ai/careers,Redwood City,51-100,Series B,,Construction AI,,Vision + infra,Unknown,,
+Dremio (AI),https://www.dremio.com/careers/,Santa Clara,500-1000,Series E,,Data + AI,,Lakehouse,Unknown,,
+Elicit AI,https://elicit.org/careers,Oakland,11-50,Seed,,Research AI,,Niche but interesting,Unknown,,
+Endor Labs,https://www.endorlabs.com/careers,San Francisco,101-250,Series B,,AI Security,,Code risk AI,Ashby,endorlabs,https://api.ashbyhq.com/posting-api/job-board/endorlabs
+Encord,https://encord.com/careers,San Francisco,51-100,Series B,,AI Data,,Annotation tooling,Unknown,,
+Enlitic AI,https://www.enlitic.com/careers,San Francisco,51-100,Series B,,Healthcare AI,,Radiology AI,Unknown,,
+EvenUp,https://www.evenuplaw.com/careers,San Francisco,101-250,Series B,,Legal AI,,Growing fast,Ashby,evenup,https://api.ashbyhq.com/posting-api/job-board/evenup
+Expensify AI,https://use.expensify.com/careers,San Francisco,1000+,Public,,Finance AI,,Automation,Workday,expensify,
+Facet AI,https://facet.com/careers,San Francisco,51-100,Series A,,Finance AI,,Consumer,Unknown,,
+Fermyon AI,https://fermyon.com/careers,San Francisco,11-50,Series A,,AI infra / WASM,,Dev infra,Unknown,,
+Fixie AI,https://fixie.ai/careers,San Francisco,11-50,Seed,,AI Agents,,Early OpenAI spinout,Ashby,fixie,https://api.ashbyhq.com/posting-api/job-board/fixie
+Galileo AI,https://www.galileo.ai/careers,San Francisco,11-50,Seed,,AI Design,,UX AI,Ashby,rungalileo,https://api.ashbyhq.com/posting-api/job-board/rungalileo
+Gorgias AI,https://www.gorgias.com/careers,San Francisco,500-1000,Series C,,Support AI,,Ecommerce,Unknown,,
+Grammarly AI,https://www.grammarly.com/jobs,San Francisco,1000+,Late Stage,,Writing AI,,PM org,Greenhouse,grammarly,https://boards-api.greenhouse.io/v1/boards/grammarly/jobs
+Harmonic AI,https://harmonic.ai/careers,San Francisco,51-100,Series A,,AI Analytics,,Emerging,Unknown,,
+Harvey AI,https://harvey.ai/careers,San Francisco,101-250,Series B,,Legal AI,,Hot startup,Greenhouse,harvey,https://boards-api.greenhouse.io/v1/boards/harvey/jobs
+Hex AI,https://hex.tech/careers,San Francisco,101-250,Series B,,Data + AI,,Notebooks,Greenhouse,hex,https://boards-api.greenhouse.io/v1/boards/hex/jobs
+Humanloop,https://humanloop.com/careers,San Francisco,11-50,Seed,,LLM tooling,,Eval + prompt mgmt,Ashby,humanloop,https://api.ashbyhq.com/posting-api/job-board/humanloop
+Inworld AI,https://inworld.ai/careers,Mountain View,101-250,Series B,,AI Characters,,Gaming AI,Unknown,,
+Ironclad AI,https://ironcladapp.com/careers,San Francisco,1000+,Series E,,Legal AI,,Enterprise,Greenhouse,ironcladinc,https://boards-api.greenhouse.io/v1/boards/ironcladinc/jobs
+Jasper AI,https://www.jasper.ai/careers,San Francisco,500-1000,Series A,,Marketing AI,,GenAI apps,Greenhouse,jasper,https://boards-api.greenhouse.io/v1/boards/jasper/jobs
+Kore.ai,https://kore.ai/careers/,Redwood City,1000+,Series D,,Conversational AI,,Enterprise focus,Unknown,,
+Labelbox,https://labelbox.com/careers/,San Francisco,500-1000,Series D,,AI Data,,Annotation,Greenhouse,labelbox,https://boards-api.greenhouse.io/v1/boards/labelbox/jobs
+Landing AI,https://landing.ai/careers,San Mateo,101-250,Series A,,Vision AI,,Andrew Ng,Unknown,,
+Lexion AI,https://lexion.ai/careers,San Francisco,11-50,Seed,,Legal AI,,Contracts AI,Unknown,,
+Lightmatter,https://lightmatter.co/careers/,Mountain View,101-250,Series C,,AI Chips,,Photonic compute,Unknown,,
+LiveRamp AI,https://liveramp.com/careers,San Francisco,1000+,Public,,Data + AI,,Adtech AI,Unknown,,
+Maven AGI,https://mavenagi.com/careers,San Francisco,51-100,Series A,,Enterprise AI,,Hot new startup,Ashby,mavenagi,https://api.ashbyhq.com/posting-api/job-board/mavenagi
+MosaicML (Databricks),https://www.databricks.com/company/careers,San Francisco,5000+,Acquired,,LLM infra,,Now Databricks,Greenhouse,databricks,https://boards-api.greenhouse.io/v1/boards/databricks/jobs
+Narrative BI,https://narrative.bi/careers,San Francisco,11-50,Seed,,Analytics AI,,Storytelling AI,Unknown,,
+NetSpring AI,https://www.netspring.io/careers,San Mateo,51-100,Series A,,AI Analytics,,Product analytics,Unknown,,
+Nimble AI,https://nimble.ai/careers,San Francisco,11-50,Seed,,Robotics,,Autonomous logistics,Unknown,,
+Observe Inc,https://www.observeinc.com/careers,San Mateo,101-250,Series B,,Observability AI,,Logs + AI,Unknown,,
+OctoAI,https://octo.ai/careers,Seattle/SF,101-250,Series C,,AI Infra,,Fast inference,Unknown,,
+Orbital Insight,https://orbitalinsight.com/careers,Palo Alto,251-500,Series D,,Geospatial AI,,Satellite data,Unknown,,
+People.ai,https://people.ai/careers/,San Francisco,500-1000,Series D,,Revenue AI,,Enterprise PM roles,Greenhouse,peopleai,https://boards-api.greenhouse.io/v1/boards/peopleai/jobs
+Pilot AI,https://pilot.com/careers,San Francisco,251-500,Series C,,Finance AI,,Ops automation,Greenhouse,pilot,https://boards-api.greenhouse.io/v1/boards/pilot/jobs
+Pony.ai,https://pony.ai/careers,Fremont,1000+,Series D,,Autonomous Vehicles,,China + US,Unknown,,
+Primer AI,https://primer.ai/careers,San Francisco,251-500,Series D,,NLP AI,,Gov + enterprise,Unknown,,
+Recursion (AI),https://www.recursion.com/careers,San Francisco,1000+,Public,,Biotech AI,,Drug discovery,Unknown,,
+RelationalAI,https://relational.ai/careers,Mountain View,101-250,Series B,,Knowledge Graph AI,,Infra,Unknown,,
+Revery AI,https://revery.ai/careers,San Francisco,51-100,Series A,,Retail AI,,Virtual try-on,Unknown,,
+Roboflow,https://roboflow.com/careers,San Francisco,51-100,Series B,,Vision AI,,Dev tools,Ashby,roboflow,https://api.ashbyhq.com/posting-api/job-board/roboflow
+Rogo AI,https://rogo.ai/careers,San Francisco,11-50,Seed,,Finance AI,,Agents,Ashby,rogo,https://api.ashbyhq.com/posting-api/job-board/rogo
+Sift AI,https://sift.com/careers,San Francisco,1000+,Series E,,Fraud AI,,Payments,Greenhouse,siftscience,https://boards-api.greenhouse.io/v1/boards/siftscience/jobs
+Skydio,https://www.skydio.com/careers,San Mateo,500-1000,Series D,,Drone AI,,Hardware + AI,Greenhouse,skydio,https://boards-api.greenhouse.io/v1/boards/skydio/jobs
+Snapsheet AI,https://snapsheetclaims.com/careers,San Francisco,101-250,Series B,,Insurance AI,,Claims automation,Unknown,,
+Spellbook AI,https://spellbook.legal/careers,San Francisco,11-50,Seed,,Legal AI,,Law tools,Unknown,,
+Standard AI,https://standard.ai/careers,San Francisco,101-250,Series C,,Retail AI,,Computer vision,Unknown,,
+Stability AI (SF),https://stability.ai/careers,San Francisco,100-250,Series B,,Generative AI,,Open-source models,Greenhouse,stabilityai,https://boards-api.greenhouse.io/v1/boards/stabilityai/jobs
+Suki AI,https://www.suki.ai/careers,Redwood City,101-250,Series C,,Healthcare AI,,Voice AI,Greenhouse,sukiai,https://boards-api.greenhouse.io/v1/boards/sukiai/jobs
+Superhuman AI,https://superhuman.com/careers,San Francisco,101-250,Series C,,Email AI,,Product-led,Greenhouse,superhuman,https://boards-api.greenhouse.io/v1/boards/superhuman/jobs
+Synthesia (SF),https://www.synthesia.io/careers,San Francisco,500-1000,Series C,,Video AI,,Enterprise,Unknown,,
+Tecton AI,https://www.tecton.ai/careers,San Francisco,101-250,Series B,,Feature Store,,ML infra,Greenhouse,tecton,https://boards-api.greenhouse.io/v1/boards/tecton/jobs
+Text Blaze AI,https://blaze.today/careers,San Francisco,11-50,Seed,,Productivity AI,,Automation,Unknown,,
+ThoughtSpot AI,https://www.thoughtspot.com/careers,Mountain View,1000+,Series F,,Analytics AI,,Search analytics,Greenhouse,thoughtspot,https://boards-api.greenhouse.io/v1/boards/thoughtspot/jobs
+Tractable AI,https://tractable.ai/careers,San Francisco,251-500,Series D,,Vision AI,,Insurance AI,Unknown,,
+Unlearn AI,https://www.unlearn.ai/careers,San Francisco,51-100,Series B,,Healthcare AI,,Clinical trials,Unknown,,
+Vannevar Labs,https://www.vannevarlabs.com/careers,Palo Alto,101-250,Series B,,Defense AI,,Gov AI,Unknown,,
+Vectra AI,https://www.vectra.ai/careers,San Jose,1000+,Series F,,AI Security,,Cyber AI,Greenhouse,vectranetworks,https://boards-api.greenhouse.io/v1/boards/vectranetworks/jobs
+Verkada AI,https://www.verkada.com/careers,San Mateo,1000+,Series D,,Security AI,,Vision AI,Greenhouse,verkada,https://boards-api.greenhouse.io/v1/boards/verkada/jobs
+Viz.ai,https://www.viz.ai/careers,San Francisco,500-1000,Series D,,Healthcare AI,,Stroke detection AI,Greenhouse,vizai,https://boards-api.greenhouse.io/v1/boards/vizai/jobs
+Weights AI (new),https://weights.ai/careers,San Francisco,11-50,Seed,,Voice AI,,Creator tools,Unknown,,
+Windfall AI,https://www.windfall.com/careers,San Francisco,101-250,Series B,,Predictive AI,,Data enrichment,Unknown,,
+Writerly AI,https://writerly.ai/careers,San Francisco,11-50,Seed,,Content AI,,Early stage,Unknown,,
+Zeta Alpha AI,https://zeta-alpha.com/careers,San Francisco,11-50,Seed,,Enterprise search AI,,Research tools,Unknown,,
+Zilliz (Milvus),https://zilliz.com/careers,Redwood City,101-250,Series B,,Vector DB,,Competes w/ Pinecone,Unknown,,
+Zinc AI,https://zinc.ai/careers,San Francisco,11-50,Seed,,AI Recruiting,,Hiring tools,Unknown,,
