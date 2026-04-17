@@ -4,7 +4,8 @@
   "private": true,
   "description": "Daily PM/Program Manager job tracker for Bay Area AI companies",
   "scripts": {
-    "build": "python3 scripts/build_companies.py",
+    "build": "echo 'Static site — no build needed'",
+    "build:companies": "python3 scripts/build_companies.py",
     "dev": "vercel dev"
   },
   "dependencies": {
